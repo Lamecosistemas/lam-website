@@ -3,8 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LAM Ecosistemas Inmobiliarios - Transformamos propiedades en activos rentables y sostenibles. Consultoría y diseño inmobiliario en Bogotá, Colombia.">
-    <title>LAM Ecosistemas Inmobiliarios</title>
+
+    <!-- SEO Meta Tags Básicos -->
+    <title>LAM Ecosistemas | Desarrollo Inmobiliario y Diseño Arquitectónico en Bogotá</title>
+    <meta name="description" content="Transformamos propiedades en activos rentables. Diseño arquitectónico, licencias de construcción, estudios de viabilidad y gerencia de proyectos inmobiliarios en Colombia.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="LAM Ecosistemas Inmobiliarios">
+    <link rel="canonical" href="https://www.lamecosistemas.com/">
+
+    <!-- Palabras clave geográficas para SEO local -->
+    <meta name="geo.region" content="CO-DC">
+    <meta name="geo.placename" content="Bogotá">
+    <meta name="geo.position" content="4.7110;-74.0721">
+    <meta name="ICBM" content="4.7110, -74.0721">
+
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lamecosistemas.com/">
+    <meta property="og:title" content="LAM Ecosistemas | Desarrollo Inmobiliario y Diseño Arquitectónico">
+    <meta property="og:description" content="Transformamos propiedades en activos rentables. Diseño arquitectónico, licencias de construcción y gerencia de proyectos inmobiliarios en Bogotá.">
+    <meta property="og:image" content="https://www.lamecosistemas.com/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="LAM Ecosistemas Inmobiliarios">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.lamecosistemas.com/">
+    <meta name="twitter:title" content="LAM Ecosistemas | Desarrollo Inmobiliario y Diseño Arquitectónico">
+    <meta name="twitter:description" content="Transformamos propiedades en activos rentables. Diseño arquitectónico, licencias de construcción y gerencia de proyectos inmobiliarios en Bogotá.">
+    <meta name="twitter:image" content="https://www.lamecosistemas.com/images/og-image.png">
+
+    <!-- Schema.org JSON-LD para Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "LAM Ecosistemas Inmobiliarios",
+        "description": "Consultoría y diseño inmobiliario. Transformamos propiedades en activos rentables y sostenibles.",
+        "url": "https://www.lamecosistemas.com",
+        "logo": "https://www.lamecosistemas.com/images/logos/LOGOTIPO_VERDE_O_SIN_FONDO.png",
+        "image": "https://www.lamecosistemas.com/images/og-image.png",
+        "telephone": "+57-313-391-8422",
+        "email": "info@lamecosistemas.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle 147 # 11 - 50 Oficina 704, Edificio Manacacias",
+            "addressLocality": "Bogotá",
+            "addressRegion": "Cundinamarca",
+            "postalCode": "110121",
+            "addressCountry": "CO"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "4.7110",
+            "longitude": "-74.0721"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Colombia"
+        },
+        "serviceType": ["Diseño Arquitectónico", "Licencias de Construcción", "Gerencia de Proyectos", "Desarrollo Inmobiliario", "Estudios de Viabilidad"]
+    }
+    </script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -13,17 +82,17 @@
     <!-- Header / Navigation -->
     <header class="header" id="header">
         <div class="header-container">
-            <a href="index.html" class="logo">
+            <a href="/" class="logo">
                 <img src="images/logos/LOGOTIPO_VERDE_O_SIN_FONDO.png" alt="LAM Ecosistemas Inmobiliarios" class="logo-img logo-dark">
                 <img src="images/logos/LOGOTIPO_BLANCO_SIN_FONDO.png" alt="LAM Ecosistemas Inmobiliarios" class="logo-img logo-light">
             </a>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="nosotros.html" class="nav-link">NOSOTROS</a></li>
-                    <li><a href="servicios.html" class="nav-link">SERVICIOS</a></li>
-                    <li><a href="proyectos.html" class="nav-link">PROYECTOS</a></li>
-                    <li><a href="blog.html" class="nav-link">BLOG</a></li>
-                    <li><a href="contacto.html" class="nav-link">CONTACTO</a></li>
+                    <li><a href="/nosotros" class="nav-link">NOSOTROS</a></li>
+                    <li><a href="/servicios" class="nav-link">SERVICIOS</a></li>
+                    <li><a href="/proyectos" class="nav-link">PROYECTOS</a></li>
+                    <li><a href="/blog" class="nav-link">BLOG</a></li>
+                    <li><a href="/contacto" class="nav-link">CONTACTO</a></li>
                 </ul>
             </nav>
             <button class="menu-toggle" aria-label="Abrir menú">
@@ -37,11 +106,11 @@
     <!-- Mobile Navigation -->
     <div class="mobile-nav">
         <ul class="mobile-nav-list">
-            <li><a href="nosotros.html" class="mobile-nav-link">NOSOTROS</a></li>
-            <li><a href="servicios.html" class="mobile-nav-link">SERVICIOS</a></li>
-            <li><a href="proyectos.html" class="mobile-nav-link">PROYECTOS</a></li>
-            <li><a href="blog.html" class="mobile-nav-link">BLOG</a></li>
-            <li><a href="contacto.html" class="mobile-nav-link">CONTACTO</a></li>
+            <li><a href="/nosotros" class="mobile-nav-link">NOSOTROS</a></li>
+            <li><a href="/servicios" class="mobile-nav-link">SERVICIOS</a></li>
+            <li><a href="/proyectos" class="mobile-nav-link">PROYECTOS</a></li>
+            <li><a href="/blog" class="mobile-nav-link">BLOG</a></li>
+            <li><a href="/contacto" class="mobile-nav-link">CONTACTO</a></li>
         </ul>
     </div>
 
@@ -131,7 +200,7 @@
                     <img src="images/backgrounds/cta-card-1.png" alt="Servicios LAM" class="cta-card-bg-img">
                     <div class="cta-card-content">
                         <h3>ELEVAMOS LA PROBABILIDAD DE ÉXITO DE TU DESARROLLO INMOBILIARIO</h3>
-                        <a href="servicios.html" class="btn btn-primary">VER SERVICIOS</a>
+                        <a href="/servicios" class="btn btn-primary">VER SERVICIOS</a>
                     </div>
                 </div>
                 <div class="cta-card">
@@ -153,7 +222,7 @@
                     <h2 class="section-title"><span class="section-title-text">PROYECTOS INMOBILIARIOS DESTACADOS</span></h2>
                     <span class="section-title-line right-aligned"></span>
                     <p><strong>Trabajamos</strong> de la mano con <strong>aliados expertos</strong> para la realización de todos los estudios necesarios para <strong>garantizar el éxito comercial, económico y social</strong> de tu proyecto.</p>
-                    <a href="proyectos.html" class="btn btn-primary">VER PROYECTOS</a>
+                    <a href="/proyectos" class="btn btn-primary">VER PROYECTOS</a>
                 </div>
                 <div class="projects-grid">
                     <div class="project-card">
@@ -185,7 +254,7 @@
                 <div class="blog-card-content">
                     <span class="blog-date">25 de Octubre del 2025</span>
                     <h3>I.A. EL TERROR DE LOS ARQUITECTOS: UNA PERSPECTIVA ESPERANZADORA ANTE LA INMINENTE AUTOMATIZACIÓN DEL DISEÑO Y LA CREATIVIDAD</h3>
-                    <a href="blog.html" class="btn btn-primary">Leer mas...</a>
+                    <a href="/blog" class="btn btn-primary">Leer mas...</a>
                 </div>
             </div>
         </div>
@@ -199,7 +268,7 @@
                     <h3>NECESITAS MAS INFORMACIÓN?</h3>
                     <p>Solicita una cita presencial o virtual sin costo para evaluar tu predio, tu proyecto o tu idea.</p>
                 </div>
-                <a href="contacto.html" class="btn btn-light">Agenda tu cita</a>
+                <a href="/contacto" class="btn btn-light">Agenda tu cita</a>
             </div>
         </div>
     </section>
@@ -270,11 +339,11 @@
                 <div class="footer-col">
                     <h4>¿QUIENES SOMOS?</h4>
                     <ul>
-                        <li><a href="nosotros.html">NOSOTROS</a></li>
-                        <li><a href="servicios.html">SERVICIOS</a></li>
-                        <li><a href="proyectos.html">PROYECTOS</a></li>
-                        <li><a href="blog.html">BLOG</a></li>
-                        <li><a href="contacto.html">CONTACTO</a></li>
+                        <li><a href="/nosotros">NOSOTROS</a></li>
+                        <li><a href="/servicios">SERVICIOS</a></li>
+                        <li><a href="/proyectos">PROYECTOS</a></li>
+                        <li><a href="/blog">BLOG</a></li>
+                        <li><a href="/contacto">CONTACTO</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
