@@ -3,33 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags Básicos -->
-    <title>Servicios | Diseño Arquitectónico y Licencias de Construcción - LAM</title>
-    <meta name="description" content="Diseño arquitectónico, licencias de construcción, estudios de suelos y viabilidad de proyectos inmobiliarios. Estructuración integral para constructores e inversionistas en Colombia.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="LAM Ecosistemas Inmobiliarios">
-    <link rel="canonical" href="https://www.lamecosistemas.com/servicios.html">
-    
-    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.lamecosistemas.com/servicios.html">
-    <meta property="og:title" content="Servicios | Diseño Arquitectónico y Licencias de Construcción - LAM">
-    <meta property="og:description" content="Diseño arquitectónico, licencias de construcción, estudios de suelos y viabilidad de proyectos inmobiliarios. Estructuración integral en Colombia.">
-    <meta property="og:image" content="https://www.lamecosistemas.com/images/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="es_CO">
-    <meta property="og:site_name" content="LAM Ecosistemas Inmobiliarios">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.lamecosistemas.com/servicios.html">
-    <meta name="twitter:title" content="Servicios | Diseño Arquitectónico y Licencias de Construcción - LAM">
-    <meta name="twitter:description" content="Diseño arquitectónico, licencias de construcción, estudios de suelos y viabilidad de proyectos inmobiliarios. Estructuración integral en Colombia.">
-    <meta name="twitter:image" content="https://www.lamecosistemas.com/images/og-image.png">
-    
-    <!-- Favicon y recursos -->
+    <meta name="description" content="Servicios de LAM Ecosistemas Inmobiliarios - Estructuración, Diseños, Licenciamiento y Evaluación de Predios.">
+    <title>Servicios - LAM Ecosistemas Inmobiliarios</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -417,7 +392,7 @@
                         Bogotá - Colombia.</p>
                         <p>🕐 Lunes a Viernes<br>
                         8:00 AM a 6:00 PM (COT)</p>
-                        <p>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e980878f86a9858884c4889b989c809d8c8a9d9c9b88c78a8684">[email&#160;protected]</a></p>
+                        <p>✉️ info@lam-arquitectura.com</p>
                         <p>📞 +57 3133918422</p>
                     </div>
                 </div>
@@ -480,7 +455,7 @@
         </div>
     </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/test-overlay.js"></script>
     <script>
         // Tabs functionality for "Nuestro Servicio Incluye"
@@ -500,4 +475,13 @@
                     // Hide all content in this section
                     section.querySelectorAll('.incluye-texto').forEach(c => c.classList.remove('active'));
                     // Show corresponding content
-                    const co
+                    const content = section.querySelector('#' + tabId);
+                    if (content) {
+                        content.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

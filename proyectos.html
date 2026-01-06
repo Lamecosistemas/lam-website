@@ -3,33 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags Básicos -->
-    <title>Proyectos | Desarrollos Inmobiliarios y Vivienda en Colombia - LAM</title>
-    <meta name="description" content="Portafolio de proyectos de vivienda y desarrollos inmobiliarios exitosos. Proyectos multifamiliares, casas y edificaciones diseñadas con viabilidad comercial garantizada.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="LAM Ecosistemas Inmobiliarios">
-    <link rel="canonical" href="https://www.lamecosistemas.com/proyectos.html">
-    
-    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.lamecosistemas.com/proyectos.html">
-    <meta property="og:title" content="Proyectos | Desarrollos Inmobiliarios y Vivienda - LAM">
-    <meta property="og:description" content="Portafolio de proyectos de vivienda y desarrollos inmobiliarios exitosos. Proyectos multifamiliares diseñados con viabilidad comercial garantizada.">
-    <meta property="og:image" content="https://www.lamecosistemas.com/images/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="es_CO">
-    <meta property="og:site_name" content="LAM Ecosistemas Inmobiliarios">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.lamecosistemas.com/proyectos.html">
-    <meta name="twitter:title" content="Proyectos | Desarrollos Inmobiliarios y Vivienda - LAM">
-    <meta name="twitter:description" content="Portafolio de proyectos de vivienda y desarrollos inmobiliarios exitosos. Proyectos multifamiliares diseñados con viabilidad comercial garantizada.">
-    <meta name="twitter:image" content="https://www.lamecosistemas.com/images/og-image.png">
-    
-    <!-- Favicon y recursos -->
+    <meta name="description" content="Proyectos de LAM Ecosistemas Inmobiliarios - Portafolio de desarrollos inmobiliarios.">
+    <title>Proyectos - LAM Ecosistemas Inmobiliarios</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -358,7 +333,7 @@
                         Bogotá - Colombia.</p>
                         <p>🕐 Lunes a Viernes<br>
                         8:00 AM a 6:00 PM (COT)</p>
-                        <p>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7f161119103f131e12521e0d0e0a160b1a1c0b0a0d1e511c1012">[email&#160;protected]</a></p>
+                        <p>✉️ info@lam-arquitectura.com</p>
                         <p>📞 +57 3133918422</p>
                     </div>
                 </div>
@@ -401,7 +376,7 @@
         </svg>
     </a>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
+    <script src="js/main.js"></script>
     <script>
         // Datos de los proyectos con sus imágenes
         const proyectosData = {
@@ -641,4 +616,12 @@
                 closeModal();
             } else if (e.key === 'ArrowLeft') {
                 currentSlide = (currentSlide - 1 + currentProject.imagenes.length) % currentProject.imagenes.length;
-               
+                updateSlide();
+            } else if (e.key === 'ArrowRight') {
+                currentSlide = (currentSlide + 1) % currentProject.imagenes.length;
+                updateSlide();
+            }
+        });
+    </script>
+</body>
+</html>
